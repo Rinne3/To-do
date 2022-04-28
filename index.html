@@ -11,7 +11,17 @@
         body {
             background-color: lightgreen;
         }
+
+        #todo-list {
+            margin-top: auto;
+        }
     </style>
+    <script>
+        function click() {
+            let div = document.createElement("textarea")
+            document.getElementById("todo-list").appendChild(div)
+        }
+    </script>
 </head>
 
 <body>
@@ -20,7 +30,7 @@
     </div>
     <div id="todo-list"></div>
 
-    <button onclick="javascript:click">
+    <button onclick="click()">
         Add reminder item
     </button>
 </body>
