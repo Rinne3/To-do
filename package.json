@@ -1,0 +1,19 @@
+{
+  "name": "to-do-app",
+  "version": "1.0.0",
+  "description": "This is the github page of a simplistic to do app.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rinne3/To-do.git"
+  },
+  "author": "Andy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Rinne3/To-do/issues"
+  },
+  "homepage": "https://github.com/Rinne3/To-do#readme"
+}
