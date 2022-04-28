@@ -13,19 +13,22 @@
         }
 
         #todo-list {
-            margin-top: auto;
+            margin: auto;
+            display: flex;
         }
     </style>
     <script>
         function btnClicked() {
             let ta = document.createElement("textarea")
-            document.body.append(ta)
+            document.getElementById("todo").append(ta)
         }
     </script>
 </head>
 
 <body>
     <h1>Simple to do application</h1>
+
+    <div id="todo"></div>
 
     <button onclick="btnClicked()">
         Add reminder item
