@@ -22,6 +22,11 @@
             let ta = document.createElement("textarea")
             document.getElementById("todo").append(ta)
         }
+
+        function eRem() {
+            let ta = document.querySelector("textarea")
+            ta.remove();
+        }
     </script>
 </head>
 
@@ -33,6 +38,8 @@
     <button onclick="btnClicked()">
         Add reminder item
     </button>
+
+    <button onclick="eRem"></button>
 </body>
 
 </html>
