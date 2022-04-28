@@ -17,20 +17,17 @@
         }
     </style>
     <script>
-        function click() {
-            let div = document.createElement("textarea")
-            document.getElementById("todo-list").appendChild(div)
+        function btnClicked() {
+            let ta = document.createElement("textarea")
+            document.body.append(ta)
         }
     </script>
 </head>
 
 <body>
-    <div id="top">
-        Simple to do application
-    </div>
-    <div id="todo-list"></div>
+    <h1>Simple to do application</h1>
 
-    <button onclick="click()">
+    <button onclick="btnClicked()">
         Add reminder item
     </button>
 </body>
