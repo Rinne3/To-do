@@ -8,6 +8,13 @@ textarea {
     margin: auto;
     width: fit-content;
     height: fit-content;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    resize: none;
 }
 
 body {
@@ -16,7 +23,7 @@ body {
 }
 
 button {
-    display: inline-block;
+    display: block;
     padding: 15px 25px;
     font-size: 24px;
     cursor: pointer;
@@ -28,6 +35,7 @@ button {
     border: none;
     border-radius: 15px;
     box-shadow: 0 9px #999;
+    margin-bottom: 10px;
 }
 
 button:hover {
