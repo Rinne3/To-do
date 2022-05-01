@@ -19,26 +19,27 @@
     </style>
     <script>
         function btnClicked() {
-            let div = document.createElement("div")
-            div.setAttribute("id","todo")
             let ta = document.createElement("textarea")
             ta.setAttribute("id", "reminder")
             document.getElementById("todo").append(ta)
         }
 
         function elementRemove() {
-            let element = document.getElementById("reminder")
+            let element = document.getElementById("reminder");
             element.remove();
-        }
+        };
 
         function removeAll() {
-
+            let elem = document.getElementById("todo");
+            elem.remove();
         }
     </script>
 </head>
 
 <body>
     <h1>Simple to do application</h1>
+
+    <div id="todo"></div>
 
     <button onclick="btnClicked()">
         Add reminder item
