@@ -27,11 +27,16 @@
         function elementRemove() {
             let element = document.getElementById("reminder");
             element.remove();
-        };
+        }
 
-        function removeAll() {
-            let elem = document.getElementById("todo");
-            elem.remove();
+        function remove() {
+            function removeAll(parent) {
+                while (parent.firstChild) {
+                    parent.removeChild(parent.firstChild);
+                }
+            }
+            const todo = document.querySelector('#todo');
+            removeAll(todo)
         }
     </script>
 </head>
@@ -49,7 +54,7 @@
         Remove reminder item
     </button>
 
-    <button onclick="removeAll()">
+    <button onclick="remove()">
         Remove all item
     </button>
 </body>
