@@ -19,7 +19,8 @@
     </style>
     <script>
         function btnClicked() {
-            let ta = document.createElement("textarea#reminder")
+            let ta = document.createElement("textarea")
+            ta.setAttribute("id", "reminder")
             document.getElementById("todo").append(ta)
         }
 
